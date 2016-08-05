@@ -9,14 +9,13 @@ final Animation shrink = AnimationUtils.loadAnimation(context, R.anim.shrink);
 shrink.setAnimationListener(new Animation.AnimationListener() {
     @Override
     public void onAnimationStart(Animation animation) {
+    //some action
 
     }
 
     @Override
     public void onAnimationEnd(Animation animation) {
-        Intent info = new Intent(v.getContext(),webActivity.class);
-        info.putExtra("site",dataPerson.get(position).getWebsite());
-        v.getContext().startActivity(info);
+        //some action
 
 
 
@@ -24,8 +23,9 @@ shrink.setAnimationListener(new Animation.AnimationListener() {
 
     @Override
     public void onAnimationRepeat(Animation animation) {
+    //someaction
 
     }
 });
-Card.startAnimation(shrink);
+Card.startAnimation(shrink); //whatever you're starting the animation on
 ```
